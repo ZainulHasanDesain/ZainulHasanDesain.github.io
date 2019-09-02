@@ -72,18 +72,18 @@ table {
 
 @font-face{
 	font-family: 'stop';
-	src: url('../htmlcssboostrapfix/fonts/stop/STOP.ttf') format('ttf');
+	src: url('fonts/stop/STOP.ttf') format('ttf');
 }
 
 @font-face {
     font-family: 'Ursa';
     font-style: normal;
     font-weight: normal;
-    src: url('../htmlcssboostrapfix/fonts/ursa-seriff/URSB____.woff') format('woff');
+    src: url('fonts/ursa-seriff/URSB____.woff') format('woff');
     }
 
 body{
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)),url(../htmlcssboostrapfix/background/laptop.png);
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)),url(background/laptop.png);
 	background-size: cover;
 	height: 100vh;
 	background-position: center;
