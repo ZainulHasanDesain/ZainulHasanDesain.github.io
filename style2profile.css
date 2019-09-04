@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Clear fix kalau menggunakan tambahkan cf di yang ada float */
+
+ .cf:before,
+ .cf:after {
+	 content: " "; /* 1 */
+	 display: table; /* 2 */
+ }
+ 
+ .cf:after {
+	 clear: both;
+ }
+ 
+ .cf {
+	 *zoom: 1;
+ }
+
+/* akhir clear fix */
+
+
+/* Your Css */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+@font-face{
+	font-family: 'stop';
+	src: url('fonts/stop/STOP.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Ursa';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/ursa-seriff/URSB____.woff') format('woff');
+    }
+
+    body{
+
+    background: linear-gradient(rgba(67,206,162,1),rgba(3,54,141,0),rgba(24,90,157,1));
+    height: 100vh;
+    }
+    
+    .title{
+      
+        position: absolute;
+        width: 52%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .navbar-brand{
+      width: 50vw !important;
+      
+    }
+    
+    
+    .nav-item{
+      border: 1px solid rgba(248, 248, 248, 1);
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      font-family: 'Oswald', sans-serif;
+      color: white;
+      font-size: 2.5vw;
+      margin-right: 0 5px 0 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    
+    .nav-item:hover{
+      background: white;
+      color: black;
+    }
+    .active{
+      background-color: rgba(39, 144, 172, 1)
+    }
+    
+    
+    /* h1{
+      font-family: 'Ursa';
+      font-size: 5vw;
+      
+    } */
+    
+    .foto{
+      width: 40%;
+      margin-left: 25%;
+      display: inline-block;
+      }
+    
+    
+    
+    /* .btn{
+      border: 2px solid rgba(248, 248, 248, 1);
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      font-family: 'stop';
+      color: white;
+      font-size: 2.5vw;
+      margin: 0 5px 0 5px;
+      
+    } */
+    
+    
+    
+    
+    @media (max-width: 767.98px) {
+    
+      .title{
+        position: absolute;
+        width: 100%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
