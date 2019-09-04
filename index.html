@@ -13,43 +13,56 @@
         <!-- My CSS -->
         <link rel="stylesheet" href="style2.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbarResponsive">
         <!-- MUlai Coding -->
 
        <!-- nAVIGASI -->
+       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark transparant ">
-                    <a class="navbar-brand" href="index.html"><img src="CV/logo.png" alt="logo" width="80%" ></a>
-                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon "></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class="text-center ml-auto">
-                        <a class="nav-item nav-link active nav" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link nav " href="about.html">Profile</a>
-                        <a class="nav-item nav-link nav " href="#">Portfolio</a>
-                      </div>
-                    </div>
-                  </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark transparant fixed-top">
+                <a class="navbar-brand" href="index.html"><img src="CV/logo.png" alt="logo" ></a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <div class="text-center ml-auto">
+                    <a class="nav-item nav-link active" href="index.html">Home </a>
+                    <a class="nav-item nav-link" href="profile.html">Profile</a>
+                    <a class="nav-item nav-link" href="#">Portfolio</a>
+                  </div>
+                </div>
+              </nav>
        </div>
        <!-- akhir navigasi -->
 
        <!-- konten -->
 
-        <div class="container-fluid"></div>
-            <div class="title center-block">
-              <img class = "foto" src="CV/foto.png" alt="Foto">
-                <h1 class="text-center">Front End Developer</h1>
-                
-                <div class=" text-center mt-4">
-             <a class="btn" href="about.html"> Profile</a>
-                
-              <a class="btn">Portfolio</a>
+       
+          <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
+          </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)), url(background/laptop.png);">
+                <div class="title center-block">
+                  <img class = "foto" src="CV/foto.png" alt="Foto">
+                     <h1 class="text-center text-white">Front End Developer</h1>
+                        <div class=" text-center mt-4">
+                          <a class="btn btn-outline-light btn-lg" href="profile.html"> Profile</a>   
+                            <a class="btn btn-outline-light btn-lg">Portfolio</a>
+                        </div>
+                </div>
               </div>
+                <div class="carousel-item " style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)),url(background/laptop2.jpg);"></div>
+                <div class="carousel-item " style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)),url(background/laptop3.jpg);"></div>
             </div>
-        </div>
-
+        </div> 
+      
        <!-- akhir konten -->
+
+
+       
         <!-- Akhir Coding -->
 
 
