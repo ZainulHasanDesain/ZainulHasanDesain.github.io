@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -83,64 +80,58 @@ table {
     }
 
 body{
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)),url(background/laptop.png);
-	background-size: cover;
-	height: 100vh;
-	background-position: center;
-	color: white;
-	background-repeat: no-repeat;
+	overflow-x: hidden;
 }
 
 .title{
-	position: relative;
-	width: 60%;
-	height: 60%;
-	/* top: 80%; */
-	left: 20%;
-	/* transform: translate(-50%,-50%); */
-	/* margin: auto;
-	padding: 0; */
+	
+		position: absolute;
+		width: 52%;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%,-50%);
 }
 
+.navbar-brand{
+	width: 50vw !important;
+	
+}
+
+
 .nav-item{
-	background: rgba(255, 255, 255, 0.7)
+	border: 1px solid rgba(248, 248, 248, 1);
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	font-size: 2.5vw;
+	margin-right: 0 5px 0 5px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.nav-item:hover{
+	background: white;
+	color: black;
+}
+.active{
+	background-color: rgba(39, 144, 172, 1)
 }
 
 
 h1{
 	font-family: 'Ursa';
 	font-size: 5vw;
-	/* margin-top: -50px; */
 	
 }
 
 .foto{
 	width: 40%;
-	/* height: 60%; */
 	margin-left: 25%;
 	display: inline-block;
-	
-	
-
-}
-.nav{
-	border: 1px solid rgba(248, 248, 248, 1);
-	background: rgba(255, 255, 255, 0.3);
-	border-radius: 10px;
-	font-family: 'Oswald', sans-serif;
-	color: white;
-	font-size: 2.5vw;
-	margin: 0 5px 0 5px;
-	font-weight: bold;
-	display: inline-block;
-	
-	
-}
+	}
 
 
-.active{
-	background-color: rgba(39, 144, 172, 1)
-}
 
 .btn{
 	border: 2px solid rgba(248, 248, 248, 1);
@@ -152,3 +143,93 @@ h1{
 	margin: 0 5px 0 5px;
 	
 }
+
+
+.carousel-item{
+    height: 100vh;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#carouselExampleIndicators{
+    height: 100%;
+}
+
+
+@media (max-width: 767.98px) {
+
+	.title{
+		position: absolute;
+		width: 100%;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.nav-item{
+		font-size: 3vw;
+	}
+	
+	h1{
+		font-family: 'Ursa';
+		font-size: 6vw;
+		
+	}
+	
+	.foto{
+		width: 40%;
+		margin-left: 30%;
+		}
+	
+	
+	
+	.btn{
+		
+		font-size: 3vw;
+	
+		
+	}
+
+ }
+
+@media (max-width: 441px){
+	.nav-item{
+		font-size: 6vw;
+	}
+
+	
+}
+
+ @media (max-width: 360px) { 
+	 .navbar-brand img{
+		 width: 100px;
+	 }
+
+	 .nav-item{
+		 font-size: 10vw;
+		 margin-bottom: 5px;
+	 }
+
+	 h1{
+		font-size: 8vw;
+		
+	}
+	
+	.foto{
+		width: 70%;
+		margin-left: 15%;
+		display: inline-block;
+		}
+	
+	
+	
+	.btn{
+		
+		font-size: 6vw;
+		margin-bottom: 5px;
+		
+		
+	}
+  }
